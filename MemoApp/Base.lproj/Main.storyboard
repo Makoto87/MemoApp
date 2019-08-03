@@ -19,17 +19,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SRO-4f-yFi">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pm5-s3-SyG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="削除"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gD-So-Ubf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SRO-4f-yFi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CV8-9N-cLc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pm5-s3-SyG" secondAttribute="trailing" id="EnF-pW-gOL"/>
                             <constraint firstItem="SRO-4f-yFi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Op9-ii-iuH"/>
+                            <constraint firstItem="SRO-4f-yFi" firstAttribute="top" secondItem="Pm5-s3-SyG" secondAttribute="bottom" id="Qil-CR-Xvq"/>
+                            <constraint firstItem="Pm5-s3-SyG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X6i-Rj-3o9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SRO-4f-yFi" secondAttribute="trailing" id="qYh-pD-aDC"/>
+                            <constraint firstItem="Pm5-s3-SyG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="waU-Ny-9NO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SRO-4f-yFi" secondAttribute="bottom" id="ytL-Dz-rUN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -40,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="113"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="112.5"/>
         </scene>
     </scenes>
 </document>
